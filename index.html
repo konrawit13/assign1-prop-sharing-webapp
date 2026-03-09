@@ -23,8 +23,8 @@
                                 <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Pages</a>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="wishlist.html">My Wishlist</a></li>
-                                    <li><a class="dropdown-item" href="#">Checkout</a></li>
                                     <li><a class="dropdown-item" href="#">Property Details</a></li>
+                                    <li><a class="dropdown-item" href="#">My Hosting List</a></li>
                                     <li><hr class="dropdown-divider"></li>
                                     <li><a class="dropdown-item" href="#">About us</a></li>
                                 </ul>
@@ -51,7 +51,7 @@
         </header>
         <main>
             <div class="container">
-                <div class="row mt-2 mb-2 d-flex align-items-center">
+                <div class="row mt-2 d-flex align-items-center">
                     <div class="col">
                         <div class="form-floating">
                             <select class="form-select" id="loatingSelectType" aria-label="Floating label select example">
@@ -89,15 +89,78 @@
                             </div>
                         </div>
                     </div>
-
+                </div>
+                <div class="row ms-4">
+                    <div>
+                        <label class="label-rent-slider" for="maxrent">Max rent:</label>
+                        <span>$500</span><span> / week</span>
+                        <input class="align-middle" type="range" id="maxrent" name="maxrent" min="0" max="1000" style="width: 600px;"/>
+                    </div>
                 </div>
                 <div class="row justify-content-center mt-2 row-cols-auto gy-4">
                     <div class="col">
                         <div class="card" style="width: 18rem;">
                             <img src="img/dummy-image-square.jpg" class="card-img-top" alt="...">
-                                <div class="card-body d-flex flex-column align-items-center">
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                                    <div class="btn-group justify-content-center" role="group" aria-label="Basic mixed styles example">
+                                <div class="card-body d-flex flex-column">
+                                    <p class="card-text">
+                                        <span class="span-title">2 Rooms ESCAPE</span>
+                                        <span class="acc-type-house">House</span><br>
+                                        <span class="price-topic">Location:</span>
+                                        <span>Brisbane</span><br>
+                                        <span class="price-topic">Price:</span>
+                                        <span>$550/wk</span><br>
+                                        <span class="price-topic">Available: </span>
+                                        <span>1 Mar 2026</span><br>
+                                        <span class="price-topic">Mates: </span>
+                                        <span>2 persons</span>
+                                    </p>
+                                    <div class="btn-group justify-content-center align-items-center" role="group">
+                                        <a class="btn btn-secondary" href="wishlist.html" role="button">Wishlist</a>
+                                        <a class="btn btn-secondary" href="details.html" role="button">Details</a>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="img/dummy-image-square.jpg" class="card-img-top" alt="...">
+                                <div class="card-body d-flex flex-column">
+                                    <p class="card-text">
+                                        <span class="span-title">1 Room FULL SERVE</span>
+                                        <span class="acc-type-apartment">Apartment</span><br>
+                                        <span class="price-topic">Location:</span>
+                                        <span>Brisbane</span><br>
+                                        <span class="price-topic">Price:</span>
+                                        <span>$200/wk</span><br>
+                                        <span class="price-topic">Available: </span>
+                                        <span>15 Mar 2026</span><br>
+                                        <span class="price-topic">Mates: </span>
+                                        <span>1 persons</span>
+                                    </p>
+                                    <div class="btn-group justify-content-center align-items-center" role="group">
+                                        <button type="button" class="btn btn-secondary">Wishlist</button>
+                                        <button type="button" class="btn btn-secondary">Details</button>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="img/dummy-image-square.jpg" class="card-img-top" alt="...">
+                                <div class="card-body d-flex flex-column">
+                                    <p class="card-text">
+                                        <span class="span-title">1 Bed NBN</span>
+                                        <span class="acc-type-bed">Bunk Bed</span><br>
+                                        <span class="price-topic">Location:</span>
+                                        <span>Brisbane</span><br>
+                                        <span class="price-topic">Price:</span>
+                                        <span>$100/wk</span><br>
+                                        <span class="price-topic">Available: </span>
+                                        <span>16 Mar 2026</span><br>
+                                        <span class="price-topic">Mates: </span>
+                                        <span>1 persons</span>
+                                    </p>
+                                    <div class="btn-group justify-content-center align-items-center" role="group">
                                         <button type="button" class="btn btn-secondary">Wishlist</button>
                                         <button type="button" class="btn btn-secondary">Details</button>
                                     </div>

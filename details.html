@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Real-estate sharing platform</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-md navbar-dark">
+                <div class="container-fluid nav-container">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse show" id="navbarMain">
+                        <ul class="navbar-nav me-auto mb-2 mb-xl-0">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Pages</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="wishlist.html">My Wishlist</a></li>
+                                    <li><a class="dropdown-item" href="#">Property Details</a></li>
+                                    <li><a class="dropdown-item" href="#">Listed Properties</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">About us</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">About us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-version disabled" style="color: #d4d4f042;">| v.0.1</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex">
+                            <div class="input-group flex-nowrap">
+                                <input type="text" class="form-control" placeholder="Keywords" aria-describedby="addon-wrapping">
+                                <span class="input-group-text" id="addon-wrapping">Search</span>
+                            </div>
+                        </form>
+                        <li class="nav-item">
+                            <a class="nav-link me-2 disabled ms-2">Logged in as:</a>
+                        </li>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div id="carouselExampleIndicators" class="carousel slide" style="width: 35rem;">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/dummy-image-square.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/dummy-image-square.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/dummy-image-square.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>                    
+                </div>
+                <div class="row">
+                    <h1>Seperate Private Room: #R1C1</h1>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="row">
+                            <span class="price-topic">Location:</span>
+                            <span>Sounth Brisbane, QLD</span>
+                        </div>
+                        <div class="row">
+                            <span class="price-topic mt-2">Available: </span><span>1 Mar 2026</span>
+                        </div>
+                        <div class="row">
+                            <span class="price-topic mt-2">Mate(s) Already There: </span>
+                            <span>0/2</span>
+                        </div>
+                        <div class="row">
+                            <span class="price-topic mt-2">Price: </span>
+                            <span>$550/wk</span>
+                        </div>
+                        <div class="row">
+                            <div class="btn-group">
+                                <a href="#" class="btn btn-outline-success">Secure This Room!</a>
+                                <a href="#" class="">Wishlist</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-header">
+                                Chat With Mates
+                            </div>
+                            <div class="card-body">
+                                <textarea class="chat-message w-100" name="chat-with-mate" id="chat-with-mate" placeholder="Message here.."></textarea><br>
+                                <button class="btn-send w-100">Send</button>
+                                <span>Other social media platforms:</span>
+                                <a href="#" style="text-decoration: none;">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/2023_Facebook_icon.svg" alt="copy left license:https://commons.wikimedia.org/wiki/File:2023_Facebook_icon.svg" style="width: 20px;">
+                                </a>
+                                <a href="#" style="text-decoration: none;">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Linkedin-logo-blue-In-square-40px.png" alt="" style="width: 20px;">
+                                </a>
+                                <a href="#" style="text-decoration: none;">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/WhatsApp_Logo_green.svg/640px-WhatsApp_Logo_green.svg.png" alt="" style="width: 20px;">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-2">
+                    <h2>Amenities</h2>
+                </div>
+                <div class="row ms-4">
+                    <li>King size, full bedding</li>
+                    <li>Air condition + Heater</li>
+                    <li>2 Shared Bath Room with Bidet</li>
+                    <li>Open Balcony for each room</li>
+                    <li>Shared Kitchen</li>
+                </div>
+                <div class="row"></div>
+                <div class="row"></div>
+            </div>
+        </main>
+        <footer>
+
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    </body>
+</html>

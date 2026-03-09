@@ -1,8 +1,66 @@
+:root {
+  --bg-color-main: #00032c;
+  --primary-accent: #007bff;
+}
 .nav-container {
-    background-color: #00032c;
+    background-color: var(--bg-color-main);
     color: white;
 }
 
 .nav-link {
   color: white;
+}
+
+.label-rent-slider {
+  font-weight: 600;
+}
+
+.acc-type-house {
+  background-color:#7baecc;
+  border-radius: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: white;
+  content: "House";
+}
+
+.price-topic {
+  font-weight: 500;
+  color: rgb(59, 59, 59);
+}
+
+.span-title {
+  font-weight: 700;
+}
+
+.acc-type-apartment {
+  background-color:#ccb07b;
+  border-radius: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: white;
+  content: "Apartment";  
+}
+
+.acc-type-bed {
+  background-color:#cc927b;
+  border-radius: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: white;
+  content: "Bunk Bed";  
+}
+
+.chat-message {
+  border-color: #8fb1d1;
+  border-radius: 5px;
+  background-color: #f6fbff;
+  height: 90px;
+}
+
+.btn-send {
+  background-color: var(--bg-color-main);
+  border-radius: 4px;
+  color:#ffffff;
+  border: none;
 }
