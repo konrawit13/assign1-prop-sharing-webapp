@@ -64,3 +64,10 @@
   color:#ffffff;
   border: none;
 }
+
+.dateinput {
+  border: 1px solid #ccc;
+  padding: 5px;
+  border-width: 1px;
+  border-radius: 4px;
+}
