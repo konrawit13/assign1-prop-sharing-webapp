@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Property sharing platform</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-md navbar-dark">
+                <div class="container-fluid nav-container">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse show" id="navbarMain">
+                        <ul class="navbar-nav me-auto mb-2 mb-xl-0">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Pages</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="wishlist.html">My Wishlist</a></li>
+                                    <li><a class="dropdown-item" href="details.html">Property Details</a></li>
+                                    <li><a class="dropdown-item" href="hostinglist.html">My Hosting List</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">About us</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">About us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-version disabled" style="color: #d4d4f042;">| v.0.1</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex">
+                            <div class="input-group flex-nowrap">
+                                <input type="text" class="form-control" placeholder="Keywords" aria-describedby="addon-wrapping" name="search">
+                                <span class="input-group-text" id="addon-wrapping">Search</span>
+                            </div>
+                        </form>
+                        <a class="nav-link me-2 disabled ms-2">Logged in as:</a>
+                        <a class="btn btn-outline-success">Agent</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="container">
+                <div class="row">
+                    <h1>You're signed in as an Agent</h1>
+                </div>
+                <div class="row">
+                    <span>Before we can proceed,</span>
+                    <span>Fill-out the form below <span class="text-black-50">(Consist of 3 parts: 1. Contact Details, 2. Property Details, and 3. Images and Bond Details)</span> to list your property on our website.</span>
+                </div>
+                <form action="#">
+                    <h6 class="step-title mt-3">Contact Details:</h6>
+                    <div class="row">
+                        <div class="input-group">
+                            <span class="input-group-text" id="email">Email</span>
+                            <input type="text" class="form-control" placeholder="Your Email Address" aria-label="Email" aria-describedby="email" name="email" autocomplete="email">
+                        </div>
+                    </div>
+                    <div class="row mt-1">
+                        <div class="input-group">
+                            <span class="input-group-text" id="name">Name</span>
+                            <input type="text" class="form-control" placeholder="Your name" aria-label="name" aria-describedby="name" name="name" autocomplete="name">
+                        </div>
+                    </div>
+                    <div class="form-check mt-2">
+                        <input class="form-check-input" type="checkbox" value="" id="check-fb">
+                        <label class="form-check-label" for="check-fb" style="width: 75px;">
+                            Facebook:
+                        </label>
+                        <input class="check-smedia" type="text" name="check-fb">
+                    </div>
+                    <div class="form-check mt-2">
+                        <input class="form-check-input" type="checkbox" value="" id="check-lkin">
+                        <label class="form-check-label" for="check-lkin" style="width: 75px;">
+                            Linkedin:
+                        </label>
+                        <input class="check-smedia" type="text" name="check-lkin">
+                    </div>
+                    <div class="form-check mt-2">
+                        <input class="form-check-input" type="checkbox" value="" id="check-whatsapp">
+                        <label class="form-check-label" for="check-whatsapp" style="width: 75px;">
+                            Whatsapp:
+                        </label>
+                        <input class="check-smedia" type="text" name="check-whatsapp">
+                    </div>
+                    <div class="form-check mt-2">
+                        <input class="form-check-input" type="checkbox" value="" id="check-other">
+                        <label class="form-check-label" for="check-other" style="width: 75px;">
+                            Other:
+                        </label>
+                        <input class="check-smedia" type="text" name="check-other">
+                    </div>
+                    <h6 class="step-title mt-3">Property Details:</h6>
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-floating mb-1">
+                                <select class="form-select" id="loatingSelectType" aria-label="Floating label select example">
+                                    <option selected>Choose a Type</option>
+                                    <option value="1">House</option>
+                                    <option value="2">Service Apartment / Share Room</option>
+                                    <option value="3">Bunk Beds</option>
+                                </select>
+                                <label for="floatingSelectType">Accommodation Type</label>
+                            </div>
+                            <div class="row mb-1">
+                                <div class="input-group">
+                                    <span class="input-group-text" id="location">Location</span>
+                                    <input type="text" class="form-control" value="Sounth Brisbane, QLD" id="location" name="address-line1" autocomplete="address-level1">
+                                </div>
+                            </div>
+                            <div class="row mb-1">
+                                <div class="input-group">
+                                    <span class="input-group-text" id="asset-name">Asset Name</span>
+                                    <input type="text" class="form-control" placeholder="Provide a short name e.g., ESCAPE life" aria-label="asset-name" aria-describedby="asset-name" name="name" autocomplete="name">
+                                </div>
+                            </div>
+                            <div class="row mb-1">
+                                <div class="input-group">
+                                    <span class="input-group-text" id="av-date">Available on</span>
+                                    <input type="date" class="form-control" aria-label="av-date" aria-describedby="av-date" name="av-date">
+                                </div>
+                            </div>
+                            <div class="row mb-1">
+                                <div class="input-group">
+                                    <span class="input-group-text" id="max-tenant">Max tenants</span>
+                                    <input type="text" class="form-control" placeholder="e.g., 1,2,3,4,..." aria-label="max-tenant" aria-describedby="max-tenant" name="max-tenant" autocomplete="off" >
+                                </div>
+                            </div>
+                            <div class="row mb-1">
+                                <div class="input-group">
+                                    <span class="input-group-text" id="occ-tenant">Occupied</span>
+                                    <input type="text" class="form-control" placeholder="e.g., 1,2,3,4,... should not exceed max tenants" aria-label="occ-tenant" aria-describedby="occ-tenant" name="occ-tenant" autocomplete="off">
+                                </div>
+                            </div>
+                            <div class="row mb-1">
+                                <div class="col">
+                                    <div class="form-floating mt-2">
+                                        <textarea class="form-control" placeholder="List" id="floatingTextarea2" style="height: 100px"></textarea>
+                                        <label for="floatingTextarea2">Available Communual Amenities:</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-1">
+                                <div class="col">
+                                    <div class="form-floating mt-2">
+                                        <textarea class="form-control" placeholder="List" id="floatingTextarea3" style="height: 100px"></textarea>
+                                        <label for="floatingTextarea3">Write a short summary:</label>
+                                    </div>
+                                </div>
+                            <div class="row mb-1">
+                                <h6 class="step-title mt-3">Images and Bond Details:</h6>
+                            </div>
+                            <div class="row mb-1">
+                                 <div class="col">
+                                    <span class="text-black-50">Upload a few images to display the assets (Don't worry you can update them later.)</span>
+                                    <input class="form-control" type="file" id="formFile">
+                                 </div>
+                            </div>
+                            <div class="row mb-1">
+                                 <div class="col">
+                                    <span class="text-black-50">[optional] Upload a draft contract/bond/tenancy agreement here</span>
+                                    <input class="form-control" type="file" id="formFile">
+                                 </div>
+                            </div>
+                            <div class="row mb-1">
+                                <div class="col">
+                                    <button class="btn btn-primary">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </main>
+        <footer></footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    </body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Property sharing platform</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-md navbar-dark">
+                <div class="container-fluid nav-container">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse show" id="navbarMain">
+                        <ul class="navbar-nav me-auto mb-2 mb-xl-0">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Pages</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="wishlist.html">My Wishlist</a></li>
+                                    <li><a class="dropdown-item" href="details.html">Property Details</a></li>
+                                    <li><a class="dropdown-item" href="#">My Hosting List</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">About us</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">About us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-version disabled" style="color: #d4d4f042;">| v.0.1</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex">
+                            <div class="input-group flex-nowrap">
+                                <input type="text" class="form-control" placeholder="Keywords" aria-describedby="addon-wrapping" name="search">
+                                <span class="input-group-text" id="addon-wrapping">Search</span>
+                            </div>
+                        </form>
+                        <a class="nav-link me-2 disabled ms-2">Logged in as:</a>
+
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="container">
+                <div class="row">
+                    <h1>Hosting Dashboard</h1>
+                </div>
+                <div class="row row-cols-auto  justify-content-center gy-4">
+                    <div class="col">
+                        <div class="card text-center" style="width: 12rem;">
+                            <h5 class="card-header">Total listed asset</h5>
+                            <div class="card-body cb-dashboard">
+                                <span class="dashboard-num-standalone">3</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card text-center" style="width: 15rem;">
+                            <h5 class="card-header">Total listed unit/suite</h5>
+                            <div class="card-body cb-dashboard">
+                                <span class="dashboard-num-standalone">13</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card text-center" style="width: 14rem;">
+                            <h5 class="card-header">Occupied unit/suite</h5>
+                            <div class="card-body cb-dashboard">
+                                <span class="dashboard-num-bar">9</span><br>
+                                <input class="align-middle rang-occ" type="range" id="occ-unit" name="occ-unit" value="9" min="0" max="13" disabled/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card text-center" style="width: 12rem;">
+                            <h5 class="card-header">Unread Enquiries</h5>
+                            <div class="card-body cb-dashboard">
+                                <span class="dashboard-num-standalone text-danger">247</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-hover" style="border-spacing: 0 10px;">
+                        <thead>
+                            <tr class="align-middle">
+                                <th scope="col">#</th>
+                                <th scope="col">img</th>
+                                <th scope="col">name</th>
+                                <th scope="col">address</th>
+                                <th scope="col">rental price</th>
+                                <th scope="col">number of guest/tenants</th>
+                                <th scope="col">actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="align-top">
+                                <th scope="row">1</th>
+                                <td><img src="img/dummy-image-square.jpg" class="card-img-top" alt="..." style="width:10rem;"></td>
+                                <td>name1</td>
+                                <td>149 Merivale Street</td>
+                                <td>$A550/week</td>
+                                <td>1/2</td>
+                                <td>
+                                    <a type="button" class="btn btn-success position-relative w-100 mt-2">
+                                        Inbox
+                                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                            99+
+                                            <span class="visually-hidden">unread messages</span>
+                                        </span>
+                                    </a>
+                                    <a class="btn btn btn-info w-100 text-truncate mt-1" href="details.html">View Detail</a>
+                                    <a class="btn btn btn-primary w-100 text-truncate mt-1" href="details.html">Edit Detail</a>
+                                    <a class="btn btn-outline-danger w-100 mt-1">Delete</a>
+                                </td>
+                            </tr>
+                            <tr class="align-top">
+                                <th scope="row">2</th>
+                                <td><img src="img/dummy-image-square.jpg" class="card-img-top" alt="..." style="width:10rem;"></td>
+                                <td>name2</td>
+                                <td>New Farm</td>
+                                <td>$A20/week</td>
+                                <td>8/10</td>
+                                <td>
+                                    <a type="button" class="btn btn-success position-relative w-100 mt-2">
+                                        Inbox
+                                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                            1
+                                            <span class="visually-hidden">unread messages</span>
+                                        </span>
+                                    </a>
+                                    <a class="btn btn btn-info w-100 text-truncate mt-1" href="details.html">View Detail</a>
+                                    <a class="btn btn btn-primary w-100 text-truncate mt-1" href="details.html">Edit Detail</a>
+                                    <a class="btn btn-outline-danger w-100 mt-1">Delete</a>
+                                </td>
+                            </tr>
+                            <tr class="align-top">
+                                <th scope="row">3</th>
+                                <td><img src="img/dummy-image-square.jpg" class="card-img-top" alt="..." style="width:10rem;"></td>
+                                <td>name3</td>
+                                <td>Kangaroo point</td>
+                                <td>$A15/week</td>
+                                <td>0/1</td>
+                                <td>
+                                    <a type="button" class="btn btn-success position-relative w-100 mt-2 disabled" aria-disabled="true">
+                                        Inbox
+                                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger visually-hidden">
+                                            0
+                                            <span class="visually-hidden">unread messages</span>
+                                        </span>
+                                    </a>
+                                    <a class="btn btn btn-info w-100 text-truncate mt-1" href="details.html">View Detail</a>
+                                    <a class="btn btn btn-primary w-100 text-truncate mt-1" href="details.html">Edit Detail</a>
+                                    <a class="btn btn-outline-danger w-100 mt-1">Delete</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+        <footer></footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    </body>
+</html>

@@ -75,3 +75,41 @@
 .step-title {
   color: color-mix(var(--bg-color-main) ,transparent 25%);
 }
+
+.mate-name-comment {
+  background-color: rgb(205, 255, 205);
+  color: green;
+  font-weight: 600;
+  padding: 0px 15px 0px 15px;
+  border-radius: 5px;
+}
+
+.input-group-text {
+  width: 100px;
+  justify-content:center;
+}
+
+.dashboard-num-standalone {
+  font-weight: 700;
+  font-size:2.4em;
+}
+
+.dashboard-num-bar {
+  font-weight: 700;
+  font-size:2em;
+}
+
+.rang-occ {
+  width: 8rem;
+  margin-top: -28px;
+}
+
+.cb-dashboard {
+  padding: 0 0 0 0;
+  height: 72px;
+}
+
+.check-smedia {
+  border:1px solid #ccc;
+  border-radius: 5px;
+}

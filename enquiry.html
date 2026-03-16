@@ -38,7 +38,7 @@
                         </ul>
                         <form class="d-flex">
                             <div class="input-group flex-nowrap">
-                                <input type="text" class="form-control" placeholder="Keywords" aria-describedby="addon-wrapping">
+                                <input type="text" class="form-control" placeholder="Keywords" aria-describedby="addon-wrapping" name="search">
                                 <span class="input-group-text" id="addon-wrapping">Search</span>
                             </div>
                         </form>
@@ -54,10 +54,78 @@
                     <h3 class="mt-2">Almost there!</h3>
                 </div>
                 <div class="row">
-                    <span class="text-black-50">Just a few more steps to make an enquiry to secure you space.</span>
-                    <span class="text-black-60 mt-2">Please fill-out this form to finalize your enquiry.</span>
+                    <span class="text-black-50">Just a few more steps to make an enquiry to secure your place.</span>
                 </div>
-                
+                <div class="row mt-2">
+                    <h6 class="step-title mt-2">Enquiring Property's Detail (read only):</h6>
+                    <span></span>
+                </div>
+
+                <form action="#" name="readonly-prop">
+                    <div class="row mb-1">
+                        <div class="input-group">
+                            <span class="input-group-text" id="entity-name">Entity Name</span>
+                            <input type="text" class="form-control" value="Seperate Private Room: #R1C1" id="entity-name" disabled readonly>
+                        </div>
+                    </div>
+                    <div class="row mb-1">
+                        <div class="input-group">
+                            <span class="input-group-text" id="entity-type">Entity Type</span>
+                            <input type="text" class="form-control" value="House" id="entity-type" disabled readonly>
+                        </div>
+                    </div>
+                    <div class="row mb-1">
+                        <div class="input-group">
+                            <span class="input-group-text" id="location">Location</span>
+                            <input type="text" class="form-control" value="Sounth Brisbane, QLD" id="location" disabled readonly>
+                        </div>
+                    </div>
+                    <div class="row mb-1">
+                        <div class="input-group">
+                            <span class="input-group-text" id="rent">Rent</span>
+                            <input type="text" class="form-control" value="$550/week" id="rent" disabled readonly>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="row mt-2">
+                    <h6 class="step-title mt-2">Please fill-out the form below to finalize your enquiry.</h6>
+                </div>
+                <form action="#" name="enquiry-body" style="margin-top: -5px;">
+                    <div class="row mt-1">
+                        <div class="input-group">
+                            <span class="input-group-text" id="email">Email</span>
+                            <input type="text" class="form-control" placeholder="Your Email Address" aria-label="Email" aria-describedby="email" name="email" autocomplete="email">
+                        </div>
+                    </div>
+                    <div class="row mt-1">
+                        <div class="input-group">
+                            <span class="input-group-text" id="phone">Phone</span>
+                            <input type="text" class="form-control" placeholder="Phone number" aria-label="phone" aria-describedby="phone" name="phone" autocomplete="tel">
+                        </div>
+                    </div>
+                    <div class="row mt-1">
+                        <div class="input-group">
+                            <span class="input-group-text" id="name">Name</span>
+                            <input type="text" class="form-control" placeholder="[Optional] Your name" aria-label="name" aria-describedby="name" name="name" autocomplete="name">
+                        </div>
+                    </div>
+                    <div class="row mt-1">
+                        <div class="input-group">
+                            <span class="input-group-text" id="address">Address</span>
+                            <input type="text" class="form-control" placeholder="[Optional] Just in case, we have to backtrack to your current physical address" aria-label="address" aria-describedby="address" name="address" autocomplete="address-line1">
+                        </div>
+                    </div>
+                    <div class="form-floating mt-2">
+                        <textarea class="form-control" placeholder="Your concern in any aspect of the asset." id="floatingTextarea2" style="height: 100px"></textarea>
+                        <label for="floatingTextarea2">Enquiry:</label>
+                    </div>
+                    <div class="row justify-content-end mt-1">
+                        <div class="col">
+                            <button class="btn btn-primary"> Submit Enquiry</button>
+                        </div>
+                    </div>
+                </form>
             </div>
         </main>
         <footer></footer>
