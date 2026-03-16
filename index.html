@@ -54,29 +54,69 @@
                     <h3 class="mt-2">Welcome to our Propery sharing website!</h3>
                 </div>
                 <div class="row">
-                    <span class="text-black-50">Browsing the gallery or use the filter below to assist your exploration.</span>
+                    <span class="text-black-50" style="margin-top: -8px;">Browsing the gallery or use the filter below to assist your exploration.</span>
                 </div>
-                <div class="row mt-2 d-flex align-items-center">
-                    <div class="col">
-                        <div class="form-floating">
-                            <select class="form-select" id="loatingSelectType" aria-label="Floating label select example">
-                                <option selected>Choose a Type</option>
-                                <option value="1">House</option>
-                                <option value="2">Service Apartment / Share Room</option>
-                                <option value="3">Bunk Beds</option>
-                            </select>
-                            <label for="floatingSelectType">Accommodation Type</label>
-                        </div>
+                <div class="row">
+                    <h6 class="step-title mt-2"> Step-by-Step Guides For:</h6>
+                <div class="row">
+                    <div class="col-12 col-xl-6">
+                        <details>
+                            <summary>Who need a Housing</summary>
+                            <ol>
+                                <li>Explore and make your wishlist.</li>
+                                <li><span class="text-black-50 me-1">[Optional]</span>Chat with mates to ensure that you are in the same vibe.</li>
+                                <li>Secure a place by make an enquiry.</li>
+                            </ol>
+                        </details>
                     </div>
+                    <div class="col-12 col-xl-6">
+                        <details>
+                            <summary>Who need a Mate <span class="text-black-50">(Primary Contractors/Landlord's agent)</span></summary>
+                            <ol>
+                                <li>Create a account.</li>
+                                <li>Fill-out hosting our online hosting request form.</li>
+                                <li>Wait for your mate or tenant to stop by.</li>
+                                <li>Response their enquiry.</li>
+                                <li><span class="text-black-50 me-1">[Optional]</span>Appoint a first meet visit or asset inspection.</li>
+                                <li>Make/revise a tenancy agreement with the original owner.</li>
+                                <li>Lodge a bond payment (Upfront payment).</li>
+                            </ol>
+                        </details>                        
+                    </div>
+                </div>
+                </div>
+                <div class="row mt-3 d-flex">
                     <div class="col">
-                        <div class="form-floating">
-                            <select class="form-select" id="floatingSelectWhere" aria-label="Floating label select example">
-                                <option selected>Select Location</option>
-                                <option value="1">Brisbane</option>
-                                <option value="2">Melbourne</option>
-                                <option value="3">Sydney</option>
-                            </select>
-                            <label for="floatingSelectWhere">Where</label>
+                        <div class="row mt-1">
+                            <div class="col">
+                                <div class="form-floating">
+                                    <select class="form-select" id="loatingSelectType" aria-label="Floating label select example">
+                                        <option selected>Choose a Type</option>
+                                        <option value="1">House</option>
+                                        <option value="2">Service Apartment / Share Room</option>
+                                        <option value="3">Bunk Beds</option>
+                                    </select>
+                                    <label for="floatingSelectType">Accommodation Type</label>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-floating">
+                                    <select class="form-select" id="floatingSelectWhere" aria-label="Floating label select example">
+                                        <option selected>Select Location</option>
+                                        <option value="1">Brisbane</option>
+                                        <option value="2">Melbourne</option>
+                                        <option value="3">Sydney</option>
+                                    </select>
+                                    <label for="floatingSelectWhere">Where</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div>
+                                <label class="label-rent-slider" for="maxrent">Select Max Rent:</label>
+                                <span>$500</span><span> / week</span>
+                                <input class="align-middle" type="range" id="maxrent" name="maxrent" min="0" max="1000" style="width: 600px;"/>
+                            </div>
                         </div>
                     </div>
                     <div class="col">
@@ -93,13 +133,6 @@
                                 <input class="dateinput w-100" type="date" id="start_end" name="trip-end"/>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="row ms-4">
-                    <div>
-                        <label class="label-rent-slider" for="maxrent">Max rent:</label>
-                        <span>$500</span><span> / week</span>
-                        <input class="align-middle" type="range" id="maxrent" name="maxrent" min="0" max="1000" style="width: 600px;"/>
                     </div>
                 </div>
                 <div class="row justify-content-center mt-2 row-cols-auto gy-4">

@@ -71,3 +71,7 @@
   border-width: 1px;
   border-radius: 4px;
 }
+
+.step-title {
+  color: color-mix(var(--bg-color-main) ,transparent 25%);
+}
