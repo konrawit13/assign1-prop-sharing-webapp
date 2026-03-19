@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Property sharing platform</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-md navbar-dark">
+                <div class="container-fluid nav-container">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse show" id="navbarMain">
+                        <ul class="navbar-nav me-auto mb-2 mb-xl-0">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Pages</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="wishlist.html">My Wishlist</a></li>
+                                    <li><a class="dropdown-item" href="details.html">Property Details</a></li>
+                                    <li><a class="dropdown-item" href="enquiry.html">Enquiry</a></li>
+                                    <li><a class="dropdown-item" href="requestform.html">Request Form</a></li>
+                                    <li><a class="dropdown-item" href="hostinglist.html">My Hosting List</a></li>
+                                    <li><a class="dropdown-item" href="compare.html">Compare Properties</a></li>
+                                    <li><a class="dropdown-item" href="contracts.html">Standard Contract</a></li>
+                                    <li><a class="dropdown-item" href="inbound_enq.html">Inbound Enquiry</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="about.html">About us</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="about.html">About us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-version disabled" style="color: #d4d4f042;">| v.0.1</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex">
+                            <div class="input-group flex-nowrap">
+                                <input type="text" class="form-control" placeholder="Keywords" aria-describedby="addon-wrapping" name="search">
+                                <span class="input-group-text" id="addon-wrapping">Search</span>
+                            </div>
+                        </form>
+                        <a class="nav-link me-2 disabled ms-2">Logged in as:</a>
+                        <a class="btn btn-outline-success">Agent</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="container">
+                <div class="row">
+                    <h1>Enquiry Inbox</h1>
+                </div>
+                <div class="row row-cols-auto  justify-content-center gy-4">
+                    <div class="col">
+                        <div class="card text-center" style="width: 12rem;">
+                            <h5 class="card-header">Total Enquiry</h5>
+                            <div class="card-body cb-dashboard">
+                                <span class="dashboard-num-standalone">300</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card text-center" style="width: 12rem;">
+                            <h5 class="card-header">In-process</h5>
+                            <div class="card-body cb-dashboard">
+                                <span class="dashboard-num-standalone">10</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card text-center" style="width: 12rem;">
+                            <h5 class="card-header">Closed</h5>
+                            <div class="card-body cb-dashboard">
+                                <span class="dashboard-num-bar">43</span><br>
+                                <input class="align-middle rang-occ" type="range" id="occ-unit" name="occ-unit" value="43" min="0" max="300" disabled/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card text-center" style="width: 12rem;">
+                            <h5 class="card-header">Unread Enquiries</h5>
+                            <div class="card-body cb-dashboard">
+                                <span class="dashboard-num-standalone text-danger">247</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-3 align-items-center justify-content-end">
+                    <div class="col d-flex justify-content-end">
+                        <div class="form-check form-switch me-4">
+                            <input class="form-check-input" type="checkbox" role="switch" id="check-inproc" checked>
+                            <label class="form-check-label" for="check-inproc">In-process</label>
+                        </div>
+                        <div class="form-check form-switch me-4">
+                            <input class="form-check-input" type="checkbox" role="switch" id="check-closed" checked>
+                            <label class="form-check-label" for="check-closed">Closed</label>
+                        </div>
+                        <div class="form-check form-switch me-4">
+                            <input class="form-check-input" type="checkbox" role="switch" id="check-unread" checked>
+                            <label class="form-check-label" for="check-unread">Unread</label>
+                        </div>
+                    </div>
+                    <div class="col col-12 col-xl-3 align-end">
+                       <div class="input-group">
+                            <input type="text" class="form-control" placeholder="keywords" aria-label="search-table" aria-describedby="search-table">
+                            <span class="input-group-text" id="search-table">Search</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-hover" style="border-spacing: 0 10px;">
+                        <thead>
+                            <tr class="align-middle">
+                                <th scope="col" >#</th>
+                                <th scope="col" class="sortable">name</th>
+                                <th scope="col" class="sortable">date</th>
+                                <th scope="col" class="sortable">rental price</th>
+                                <th scope="col" class="sortable">enquirer</th>
+                                <th scope="col" class="sortable">status</th>
+                                <th scope="col">actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="align-top">
+                                <th scope="row">1</th>
+                                <td>name1</td>
+                                <td>2026-03-01</td>
+                                <td>$A550/week</td>
+                                <td>Mr. A</td>
+                                <td><span class="status-unread">Unread</span></td>
+                                <td>
+                                    <a class="btn btn btn-info w-100 text-truncate mt-1" href="details.html">View Detail</a>
+                                    <a type="button" class="btn btn-success w-100 mt-1">Respond</a>
+                                    <a class="btn btn-outline-danger w-100 mt-1">Mark as Closed</a>
+                                </td>
+                            </tr>
+                            <tr class="align-top">
+                                <th scope="row">2</th>
+                                <td>name1</td>
+                                <td>2026-03-01</td>
+                                <td>$A450/week</td>
+                                <td>Mr. A</td>
+                                <td><span class="status-inprocess">In-process</span></td>
+                                <td>
+                                    <a class="btn btn btn-info w-100 text-truncate mt-1" href="details.html">View Detail</a>
+                                    <a type="button" class="btn btn-success w-100 mt-1">Respond</a>
+                                    <a class="btn btn-outline-danger w-100 mt-1">Mark as Closed</a>
+                                </td>
+                            </tr>
+                            <tr class="align-top">
+                                <th scope="row">3</th>
+                                <td>name1</td>
+                                <td>2026-03-01</td>
+                                <td>$A250/week</td>
+                                <td>Mr. B</td>
+                                <td><span class="status-closed">Closed</span></td>
+                                <td>
+                                    <a class="btn btn btn-info w-100 text-truncate mt-1" href="details.html">View Detail</a>
+                                    <a type="button" class="btn btn-success w-100 mt-1">Respond</a>
+                                </td>
+                            </tr>
+                            <tr class="align-top">
+                                <th scope="row">4</th>
+                                <td>name1</td>
+                                <td>2026-03-01</td>
+                                <td>$A350/week</td>
+                                <td>Mr. C</td>
+                                <td><span class="status-unread">Unread</span></td>
+                                <td>
+                                    <a class="btn btn btn-info w-100 text-truncate mt-1" href="details.html">View Detail</a>
+                                    <a type="button" class="btn btn-success w-100 mt-1">Respond</a>
+                                    <a class="btn btn-outline-danger w-100 mt-1">Mark as Closed</a>
+                                </td>
+                            </tr>
+                            <tr class="align-top">
+                                <th scope="row">5</th>
+                                <td>name1</td>
+                                <td>2026-03-01</td>
+                                <td>$A500/week</td>
+                                <td>Mr. D</td>
+                                <td><span class="status-unread">Unread</span></td>
+                                <td>
+                                    <a class="btn btn btn-info w-100 text-truncate mt-1" href="details.html">View Detail</a>
+                                    <a type="button" class="btn btn-success w-100 mt-1">Respond</a>
+                                    <a class="btn btn-outline-danger w-100 mt-1">Mark as Closed</a>
+                                </td>
+                            </tr>
+                            <tr class="align-top">
+                                <th scope="row">6</th>
+                                <td>name1</td>
+                                <td>2026-03-01</td>
+                                <td>$A400/week</td>
+                                <td>Mr. E</td>
+                                <td><span class="status-unread">Unread</span></td>
+                                <td>
+                                    <a class="btn btn btn-info w-100 text-truncate mt-1" href="details.html">View Detail</a>
+                                    <a type="button" class="btn btn-success w-100 mt-1">Respond</a>
+                                    <a class="btn btn-outline-danger w-100 mt-1">Mark as Closed</a>
+                                </td>
+                            </tr>
+                            <tr class="align-top">
+                                <th scope="row">7</th>
+                                <td>name1</td>
+                                <td>2026-03-01</td>
+                                <td>$A300/week</td>
+                                <td>Mr. F</td>
+                                <td><span class="status-unread">Unread</span></td>
+                                <td>
+                                    <a class="btn btn btn-info w-100 text-truncate mt-1" href="details.html">View Detail</a>
+                                    <a type="button" class="btn btn-success w-100 mt-1">Respond</a>
+                                    <a class="btn btn-outline-danger w-100 mt-1">Mark as Closed</a>
+                                </td>
+                            </tr>
+                            <tr class="align-top">
+                                <th scope="row">8</th>
+                                <td>name1</td>
+                                <td>2026-03-01</td>
+                                <td>$A200/week</td>
+                                <td>Mr. G</td>
+                                <td><span class="status-unread">Unread</span></td>
+                                <td>
+                                    <a class="btn btn btn-info w-100 text-truncate mt-1" href="details.html">View Detail</a>
+                                    <a type="button" class="btn btn-success w-100 mt-1">Respond</a>
+                                    <a class="btn btn-outline-danger w-100 mt-1">Mark as Closed</a>
+                                </td>
+                            </tr>
+                            <tr class="align-top">
+                                <th scope="row">9</th>
+                                <td>name1</td>
+                                <td>2026-03-01</td>
+                                <td>$A550/week</td>
+                                <td>Mr. A</td>
+                                <td><span class="status-unread">Unread</span></td>
+                                <td>
+                                    <a class="btn btn btn-info w-100 text-truncate mt-1" href="details.html">View Detail</a>
+                                    <a type="button" class="btn btn-success w-100 mt-1">Respond</a>
+                                    <a class="btn btn-outline-danger w-100 mt-1">Mark as Closed</a>
+                                </td>
+                            </tr>
+                            <tr class="align-top">
+                                <th scope="row">10</th>
+                                <td>name1</td>
+                                <td>2026-03-01</td>
+                                <td>$A550/week</td>
+                                <td>Mr. A</td>
+                                <td><span class="status-unread">Unread</span></td>
+                                <td>
+                                    <a class="btn btn btn-info w-100 text-truncate mt-1" href="details.html">View Detail</a>
+                                    <a type="button" class="btn btn-success w-100 mt-1">Respond</a>
+                                    <a class="btn btn-outline-danger w-100 mt-1">Mark as Closed</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="row">
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination">
+                            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">4</a></li>
+                            <li class="page-item"><a class="page-link" href="#">5</a></li>
+                            <li class="page-item"><a class="page-link" href="#">...</a></li>
+                            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </main>
+        <footer></footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    </body>
+</html>
