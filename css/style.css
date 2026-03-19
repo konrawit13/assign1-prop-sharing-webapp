@@ -4,6 +4,13 @@
   --bg-color-main: #00032c;
   --primary-accent: #007bff;
 }
+
+body {
+  font-family:
+  -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
 .nav-container {
     background-color: var(--bg-color-main);
     color: white;
@@ -225,4 +232,6 @@
 
 .card-img-top {
   height: 190px;
+  object-fit: cover;
+  aspect-ratio: 16/9;
 }
